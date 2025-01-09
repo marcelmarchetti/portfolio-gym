@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:portfolio_marcel_gym/core/constants/navigation/navigation_routes.dart';
+import 'package:portfolio_marcel_gym/core/providers/user_provider.dart';
 import 'package:portfolio_marcel_gym/main.dart';
 import 'package:provider/provider.dart';
 
@@ -13,7 +14,7 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     return MultiProvider(
       providers: [
-
+        ChangeNotifierProvider(create: (_) => UserNotifier())
       ],
       child: MaterialApp(
         title: 'Portofolio Marcel gym',
