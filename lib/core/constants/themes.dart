@@ -5,6 +5,8 @@ class AppThemes{
   static final mainTheme = ThemeData(
     colorScheme: ColorScheme.fromSeed(seedColor: AppColors.primary),
     useMaterial3: true,
-    fontFamily: 'Poppins'
+    fontFamily: 'Poppins',
+    cardColor: Colors.transparent,
+    scaffoldBackgroundColor: AppColors.background
   );
 }
