@@ -19,4 +19,5 @@ class AppColors {
   // Otros colores
   static const Color background = Color(0xFFF4F4F4);
   static const Color onBackground = Color(0xFF000000);
+  static const Color secondaryText = Color(0xFF90A4AE);
 }
