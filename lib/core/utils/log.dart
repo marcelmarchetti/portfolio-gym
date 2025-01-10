@@ -18,4 +18,11 @@ class Log {
       print("ERROR: $message");
     }
   }
+
+  static void errorWithStackTrace(Object message, StackTrace stackTrace) {
+    if (kDebugMode) {
+      print("ERROR: ${message.toString()}");
+      print("STACKTRACE: $stackTrace");
+    }
+  }
 }
