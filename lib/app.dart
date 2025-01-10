@@ -6,6 +6,7 @@ import 'package:portfolio_marcel_gym/main.dart';
 import 'package:provider/provider.dart';
 
 import 'core/constants/navigation/routes.dart';
+import 'core/constants/themes.dart';
 
 class App extends StatelessWidget {
   const App({super.key});
@@ -26,10 +27,7 @@ class App extends StatelessWidget {
         supportedLocales: [
           Locale('es'),
         ],
-        theme: ThemeData(
-          colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-          useMaterial3: true,
-        ),
+        theme: AppThemes.mainTheme,
         initialRoute: Routes.login,
         onGenerateRoute: NavigationRoutes.generateRoute,
       ),
